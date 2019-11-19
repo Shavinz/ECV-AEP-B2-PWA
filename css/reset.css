@@ -1,0 +1,72 @@
+/* RESET */
+
+/* Selectionner toutes les balises (tag) HTML */
+*{
+    /* Supprimer toutes les marges (ext.int.) */
+    margin: 0;
+    padding: 0;
+
+    /* Integrer border et padding dans la taille des balises */
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+
+}
+
+:root{
+    --main-color: lightblue;
+    --min-marge: 1rem;
+    --med-marge: 2rem;
+    --max-marge: 4rem;
+}
+
+
+html{
+    /* Passer d'une base 16px à une base 10px */
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+    text-align: center;
+    font-family: 'Archivo Black', sans-serif;
+    font-weight: 400;
+    color: white;
+    line-height: 1.1;
+    background-color: #131313;
+}
+
+img{
+    max-width: 100%;
+}
+
+a{
+    color: inherit;
+}
+
+/* Toutes les balises a sauf celles ayant [target="_blank"] */
+a:not([target="_blank"]){
+    text-decoration: none;
+}
+
+h1, h2{
+    font-family: 'Saira', sans-serif;
+    font-weight: 900;
+
+    /* Pour mettre en majuscules */
+    text-transform: uppercase;
+}
+
+h1 span{
+    font-size: .5em;
+    display: block;
+    font-weight: 400;
+    font-family: 'Archivo Black', sans-serif;
+
+}
+
+.maxWidth{
+    max-width: 35rem;
+    margin-left: auto;
+    margin-right: auto;
+}

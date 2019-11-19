@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black|Saira&display=swap');
+
+
+
+/*
+Reset
+*/
+
+footer, header{
+	left: 0;
+	padding: var(--med-marge);
+	width: 100%;
+	position: fixed;
+	color: white;
+	background-color: var(--main-color);
+}
+
+header{
+	top: 0;
+}
+
+nav li{
+	list-style: none;
+	margin-bottom: var(--min-marge);
+}
+
+nav{
+	padding-top: var(--min-marge);
+}
+
+nav a{
+		display: block;
+		color: white;
+		background-color: rgba(255, 255, 255, 0.5);
+		width: 100%;
+		padding: var(--min-marge);
+		-webkit-transition: all .3s;
+		-moz-transition: all .3s;
+		-ms-transition: all .3s;
+		-o-transition: all .3s;
+}
+
+
+nav ul{
+	height: 0;
+	overflow: hidden;
+
+	-webkit-transition: all .3s;
+	-moz-transition: all .3s;
+	-ms-transition: all .3s;
+	-o-transition: all .3s;
+}
+
+nav ul.open{
+	height: 13.1rem;
+}
+nav a:hover{
+	background-color: white;
+	color: var(--main-color)
+}
+
+main{
+	height: 100vh;
+    overflow: auto;
+    padding: 26rem 2rem 9rem 2rem;
+}
+
+nav button{
+	background-color: white;
+	position: absolute;
+	height: 4rem;
+	width: 4rem;
+	font-size: 2rem;
+	-webkit-border-radius:50%;
+	-moz-border-radius:50%;
+	-o-border-radius:50%;
+	border-radius: 50%;
+
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+
+	top: calc(100% - 2rem);
+	border: .2rem solid var(--main-color);
+}
+
+nav button.open{
+	background-color: violet;
+	border: white;
+}
+
+footer{
+	bottom: 0;
+	font-size: 1rem;
+	text-transform: uppercase;
+}
